@@ -1,0 +1,224 @@
+.header {
+    background-color: $lightGray;
+
+    .nav {
+        padding: 20px 0;
+        @include flex(space-between, center, 0);
+    }
+
+    &__menu-list {
+        @include flex(space-between, center, 33px);
+    }
+
+    &__menu-link {
+        @include text(#313131, 18px, 400, 150%);
+        font-variant: small-caps;
+        @extend %text-hover;
+    }
+
+    &__tel {
+        @include text(#313131, 16px, 700, 135%);
+        @extend %text-hover;
+    }
+
+    &__tel-button {
+        @include orange-btn(6px 14px);
+    }
+
+    .burgermenu {
+        height: 37px;
+        width: 37px;
+        position: relative;
+        display: none;
+        z-index: 2;
+
+        &__line {
+            transition: all .3s ease;
+            position: absolute;
+            display: block;
+            width: 37px;
+            height: 5px;
+            border-radius: 3px;
+            background-color: #0074B7;
+        }
+
+        &__line-1 {
+            top: 0;
+        }
+
+        &__line-2 {
+            top: 50%;
+            bottom: 50%;
+            transform: translateY(-50%);
+        }
+
+        &__line-3 {
+            bottom: 0;
+        }
+
+        &-active {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+
+            .burgermenu__line-1 {
+                top: 50%;
+                bottom: 50%;
+                transform: translateY(-50%);
+                rotate: 45deg;
+            }
+
+            .burgermenu__line-2 {
+                display: none;
+            }
+
+            .burgermenu__line-3 {
+                top: 50%;
+                bottom: 50%;
+                transform: translateY(-50%);
+                rotate: -45deg;
+            }
+
+            .burgermenu__line {
+                width: 40px;
+            }
+        }
+    }
+
+    .pull-out-wrap {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        display: none;
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.5);
+
+        .pull-out {
+            @include flex(space-between, center, 20px);
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 30px 52px 20px;
+            transition: .3s all ease;
+            border-bottom-left-radius: 16px;
+            background-color: $lightGray;
+
+            &__list {
+                @include flex(space-between, center, 8px);
+                flex-direction: column;
+            }
+        }
+
+    }
+
+    .pull-out-active {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        &__menu-list {
+            gap: 20px;
+        }
+
+        &__menu-link {
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        &__menu-list {
+            gap: 12px;
+        }
+
+        &__tel {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+
+        &__menu-list,
+        &__tel {
+            display: none;
+        }
+
+        .burgermenu {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        &__logo-img {
+            height: 60px;
+        }
+
+        .burgermenu {
+            height: 30px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        &__tel-button {
+            display: none;
+        }
+    }
+}
+
+#contacts {
+    position: relative;
+}
+
+.contacts__pop-up {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    scale: 0;
+    transition: .3s all ease;
+}
+
+.contacts-active {
+    transition: .3s all ease;
+    scale: 1;
+    opacity: 1;
+}
+
+.contacts__inner {
+    height: 150px;
+    width: 300px;
+    background-color: $lightGray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 16px;
+    position: relative;
+
+    img {
+        scale: 1.5;
+    }
+}
+
+.contacts__modal-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    user-select: none;
+    cursor: pointer;
+}

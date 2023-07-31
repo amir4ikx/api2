@@ -1,0 +1,75 @@
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@mixin text($cl, $fz, $fw, $lh) {
+    color: $cl;
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+@mixin flex($jc, $ai, $gap){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+}
+
+@mixin orange-btn($p) {
+    display: block;
+    cursor: pointer;
+    padding: $p;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #FF9A39 0%, #FFAF37 100%);
+    @include text($lightGray, 16px, 700, 150%);
+    white-space: nowrap;
+    &:hover{
+        background: linear-gradient(135deg, rgba(255, 197, 49, 1), rgba(255, 234, 0, 1));
+        transition: all ease .3s .3s;
+    }
+}
+
+%text-hover{
+    &:hover{
+        color: #FF7F02;
+        transition: all ease .2s;
+    }
+}
+
+@mixin yellow-btn($p){
+    padding: $p;
+    border-radius: 16px;
+    background: $yellow;
+    @include text(#313131, 16px, 700, normal);
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    &:hover{
+        background-color: #fff45a;
+        box-shadow: 0px 0px 10px #313131;
+    }
+    transition: .3s all ease;
+}
+
+@mixin white-btn($p){
+    padding: $p;
+    border-radius: 16px;
+    border: 1px solid #313131;
+    background: transparent;
+    @include text(#313131, 16px, 700, normal);
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    &:hover{
+        box-shadow: 0px 0px 10px #313131;
+        background: #fff;
+    }
+    transition: .3s all ease;
+}
+
+.scale{
+    scale: 1.5;
+}

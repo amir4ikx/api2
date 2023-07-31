@@ -1,0 +1,169 @@
+.hero {
+    padding: 100px 0 170px;
+    background-color:  #0194CF;
+
+    .container {
+        background-image: url(../img/hero/hero.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right center;
+    }
+
+    &__heading {
+        @include text($lightGray, 45px, 700, 135%);
+
+        span {
+            font-weight: 400;
+        }
+    }
+
+    &__subtitle {
+        @include text($lightGray, 18px, 300, 135%);
+        margin: 40px 0;
+    }
+
+    &__btn {
+        @include yellow-btn(25px 90px)
+    }
+}
+
+@media(max-width: 992px) {
+    .hero {
+        padding: 90px 0 150px;
+        background-image: url(../img/hero/hero-2.png);
+        background-position: center;
+        background-size: cover;
+
+        .container {
+            background-image: none;
+        }
+
+        &__heading {
+            text-align: center
+        }
+
+        &__subtitle {
+            text-align: center
+        }
+
+        &__btn {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 75px 0 130px;
+
+        &__heading {
+            font-size: 40px;
+        }
+
+        &_subtitle {
+            margin: 30px 0;
+        }
+
+        &__btn {
+            width: 100%;
+            padding: 25px 0;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 70px 0 120px;
+
+        &__heading {
+            font-size: 32px;
+        }
+
+        &_subtitle {
+            margin: 25px 0;
+        }
+
+        &__btn {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .hero {
+        &__heading {
+            font-size: 26px;
+        }
+
+        &_subtitle {
+            margin: 20px 0;
+        }
+
+        &__btn {
+            font-size: 12px;
+        }
+    }
+}
+
+.hero__modal-wrap {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    place-content: center;
+    transition: .3s all ease;
+    .hero__modal {
+        padding: 30px 60px;
+        background-color: $lightGray;
+        border-radius: 16px;
+        position: relative;
+
+        &-heading {
+            @include text(#313131, 25px, 700, 135%);
+            text-align: center;
+        }
+
+        &-subtitle {
+            @include text(#313131, 14px, 300, 135%);
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        &-input {
+            width: 100%;
+            border-radius: 16px;
+            border: 2px solid #313131;
+            outline: none;
+            @include text(#313131, 16px, 700, unset);
+            padding: 25px 20px;
+
+            &::placeholder {
+                font-weight: 300;
+            }
+        }
+
+        &-btn {
+            @include yellow-btn(25px 131px);
+            margin-top: 40px;
+            width: 100%;
+            display: block;
+        }
+
+        &-close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+}
+
+.modal-active {
+    display: grid;
+    opacity: 1;
+}

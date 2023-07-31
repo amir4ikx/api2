@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/header/logo.svg">
+    <title>yapelmeni.ru</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="loader-wrap">
+        <div class="loader"></div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <img class="header__logo-img" src="././img/header/logo.svg" alt="logo">
+                <div class="header__menu-list">
+                    <a class="header__menu-link" download href="./price-list.txt">Прайс-лист</a>
+                    <a class="header__menu-link" href="#catalog">Каталог</a>
+                    <a class="header__menu-link" href="#!">Опт</a>
+                    <a class="header__menu-link" href="#delivery">Доставка</a>
+                    <a class="header__menu-link" href="#about">О Нас</a>
+                    <a class="header__menu-link" id="contacts" href="#!">Контакты</a>
+                </div>
+                <a class="header__tel" href="tel:+89202785606">8-920-278-56-06</a>
+                <a class="header__tel-button" href="tel:+89202785606">Обратный звонок</a>
+                <div class="burgermenu">
+                    <span class="burgermenu__line burgermenu__line-1"></span>
+                    <span class="burgermenu__line burgermenu__line-2"></span>
+                    <span class="burgermenu__line burgermenu__line-3"></span>
+                </div>
+            </nav>
+        </div>
+        <div class="pull-out-wrap">
+            <div class="pull-out">
+                <img class="pull-out__logo" src="./img/header/logo.svg" alt="logo">
+                <div class="pull-out__list">
+                    <a class="header__menu-link" download href="./price-list.txt">Прайс-лист</a>
+                    <a class="header__menu-link" href="#catalog">Каталог</a>
+                    <a class="header__menu-link" href="#!">Опт</a>
+                    <a class="header__menu-link" href="#delivery">Доставка</a>
+                    <a class="header__menu-link" href="#about">О Нас</a>
+                    <a class="header__menu-link" href="#footer">Контакты</a>
+                </div>
+                <a class="header__tel" href="tel:+89202785606">8-920-278-56-06</a>
+                <a class="header__tel-button" href="tel:+89202785606">Обратный звонок</a>
+            </div>
+        </div>
+        <div class="contacts__pop-up">
+            <div class="contacts__inner">
+                <a href="#!"><img src="./img/header/instagram.svg" alt="insatgram"></a>
+                <a href="#!"><img src="./img/header/facebook.svg" alt="facebook"></a>
+                <a href="#!"><img src="./img/header/twitter.svg" alt="twitter"></a>
+                <a href="#!"><img src="./img/header/email.svg" alt="email"></a>
+                <span class="contacts__modal-close">&#10005;</span>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__heading">Пельмени, вареники,<span><br>продукты глубокой заморозки<br></span>ОПТОМ от
+                    производителя</h1>
+                <p class="hero__subtitle">Скачайте полный прайс-лист на всю нашу продукцию</p>
+                <button class="hero__btn">Скачать прайс-лист</button>
+            </div>
+            <div class="hero__modal-wrap">
+                <div class="hero__modal">
+                    <h4 class="hero__modal-heading">Скачайте наш <br>прайс-лист сейчас!</h4>
+                    <p class="hero__modal-subtitle">Введите номер телефона и нажмите кнопку!
+                        <br>Мы вышлем всю информацию на WhatsApp.
+                    </p>
+                    <form action="">
+                        <input class="hero__modal-input" type="text" value="+7">
+                        <a class="hero__modal-btn" download href="./price-list.txt">Скачать прайс-лист</a>
+                    </form>
+                    <span class="hero__modal-close">&#10005;</span>
+                </div>
+            </div>
+        </section>
+        <section class="catalog" id="catalog">
+            <div class="container">
+                <div class="catalog__best">
+                    <h3 class="catalog__best-title">Каталог</h3>
+                    <h5 class="catalog__best-subtitle">Хиты продаж</h5>
+                    <div class="catalog__best-cards">
+                        <div class="catalog__best-card">
+                            <img class="catalog__best-img" src="./img/catalog/pelmeni.png" alt="pelmeni">
+                            <p class="catalog-card-title">Пельмени глубокой заморозки</p>
+                            <button class="catalog__best-order" id="pelmeni">Заказать оптом</button>
+                            <button class="catalog__best-more" id="pelmeni">Подробнее</button>
+                        </div>
+                        <div class="catalog__best-card">
+                            <img class="catalog__best-img" src="./img/catalog/khinkali.png" alt="khinkali">
+                            <p class="catalog-card-title">Сочные хинкали</p>
+                            <button class="catalog__best-order" id="khinkali">Заказать оптом</button>
+                            <button class="catalog__best-more" id="khinkali">Подробнее</button>
+                        </div>
+                        <div class="catalog__best-card">
+                            <img class="catalog__best-img" src="./img/catalog/manti.png" alt="manti">
+                            <p class="catalog-card-title">Изысканные манты</p>
+                            <button class="catalog__best-order" id="manti">Заказать оптом</button>
+                            <button class="catalog__best-more" id="manti">Подробнее</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="catalog__main">
+                    <h5 class="catalog__main-title">Основной каталог</h5>
+                    <div class="catalog__main-cards">
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img" src="" alt="pelmeni">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img" src="" alt="pelmeni">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img" src="" alt="pelmeni">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img" src="" alt="pelmeni">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img" src="" alt="manti">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img" src="" alt="manti">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img" src="" alt="manti">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img" src="" alt="manti">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img" src="" alt="khinkali">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img" src="" alt="khinkali">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img" src="" alt="khinkali">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img" src="" alt="khinkali">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img scale" src="" alt="vareniki">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img scale" src="" alt="vareniki">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img scale" src="" alt="vareniki">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img scale" src="" alt="vareniki">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img scale" src="" alt="vareniki">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img" src="" alt="pelmeni">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img" src="" alt="manti">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                        <div class="catalog__main-card">
+                            <img class="catalog__main-img" src="" alt="khinkali">
+                            <p class="catalog__main-subtitle"></p>
+                            <button class="catalog__best-order">Заказать оптом</button>
+                            <button class="catalog__best-more">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__pop-up">
+                <img class="catalog__pop-up-img" src="">
+                <div class="catalog__pop-up-content">
+                    <h4 class="catalog__pop-up-heading"></h4>
+                    <button class="catalog__pop-up-btn">Заказать</button>
+                    <p class="catalog__pop-up-cto">СТО 0062757741-001-2009</p>
+                    <p class="catalog__pop-up-bold">Состав тестовой оболочки: <span
+                            class="catalog__pop-up-light"></span></p>
+                    <p class="catalog__pop-up-bold">Состав фаршевой начинки: <span class="catalog__pop-up-light"></span>
+                    </p>
+                    <p class="catalog__pop-up-bold">Пищевая ценность: <span class="catalog__pop-up-light"></span></p>
+                    <p class="catalog__pop-up-bold">Энергетическая ценность: <span class="catalog__pop-up-light"></span>
+                    </p>
+                    <p class="catalog__pop-up-bold">Способ приготовления: <span class="catalog__pop-up-light"></span>
+                    </p>
+                    <p class="catalog__pop-up-bold">Срок годности: <span class="catalog__pop-up-light"></span></p>
+                    <p class="catalog__pop-up-bold">Фасовка: <span class="catalog__pop-up-light"></span></p>
+                    <span class="catalog__pop-up-close">&#10005;</span>
+                </div>
+            </div>
+        </section>
+        <section class="conditions">
+            <div class="container">
+                <h4 class="conditions__title">ОСОБЫЕ УСЛОВИЯ<br>для крупных заказчиков</h4>
+                <p class="conditions__subtitle">Индивидуальные условия для оптовых баз, магазинов</p>
+                <a class="conditions__btn" href="./privacy-policy.html">Получить особые условия</a>
+            </div>
+        </section>
+        <section class="delivery" id="delivery">
+            <div class="container">
+                <img class="delivery__img" src="./img/delivery/delivery.png" alt="truck">
+                <div class="delivery__content">
+                    <h4 class="delivery__heading">ДОСТАВКА</h4>
+                    <p class="delivery__paragpraph">Быстрый срок исполнения Вашего заказа. Поставки осуществляются
+                        напрямую с нашего склада в г. Златоуст Челябинской области.</p>
+                    <p class="delivery__paragpraph">Вся продукция имеет необходимые сопроводительные документы и
+                        сертифицирована (ветеринарно-сопроводительная документация выписывается через систему
+                        «Меркурий»).</p>
+                    <p class="delivery__paragpraph">Мы сотрудничаем с транспортными компаниями, которые осуществляют
+                        перевозку продукции с соблюдением необходимого температурного режима и точно в срок.</p>
+                    <p class="delivery__paragpraph-bold">Всю работу по организации перевозки мы возьмем на себя!</p>
+                    <p class="delivery__paragpraph">Возможен самовывоз.</p>
+                    <a class="delivery__btn" href="./privacy-policy.html">Узнать стоимость и сроки</a>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <h4 class="about__heading">О НАС</h4>
+                <p class="about__paragraph">Компания "Январь" является поставщиком замороженных продуктов в г. Златоусте
+                    и горнозаводской зоне с 1993 года.</p>
+                <p class="about__paragraph">У нас интересный и востребованный ассортимент продукции глубокой заморозки
+                    (до 400 наименований). Это прежде всего мясные полуфабрикаты собственного производства, мороженое,
+                    овощи и полуфабрикаты других производителей.</p>
+                <p class="about__paragraph">Помимо большого ассортимента компания предоставляет магазинам гибкие условия
+                    работы: бесплатная доставка, предоставление оборудования, наличный и безналичный расчет, отсрочка
+                    платежа и т.д.</p>
+            </div>
+        </section>
+        <section class="production">
+            <div class="container">
+                <div class="production__left">
+                    <h4 class="production__heading">Собственное производство</h4>
+                    <p class="production__paragraph">Полностью свое производство, общей площадью 1500 м2, которое
+                        позволяет делать очень вкусный и качественный продукт по отработанной технологии. Наши
+                        производственные мощности позволяют переработать более 200 тонн продукции в месяц</p>
+                    <p class="production__paragraph">Мы несем ответственность за качество и безопасность выпускаемой
+                        продукции, работая с надежными поставщиками сырья, и используя самое новейшее оборудование.</p>
+                    <p class="production__paragraph">За время работы мы собрали лучшие рецепты по всей России и Украине,
+                        и отработали технологию производства продукции до совершенства.</p>
+                    <p class="production__paragraph">Вся наша продукция имеет полный пакет сопроводительных документов и
+                        сертификаты соответствия.</p>
+                </div>
+                <div class="production__right">
+                    <h4 class="production__heading">Качественное хранение</h4>
+                    <p class="production__paragraph">Наши холодильные камеры прошли аттестацию в соответствующих
+                        государственных органах.</p>
+                    <p class="production__paragraph">Это означает, что температурный режим в камерах не зависит от
+                        времени года, суток и того закрыта дверь в камеру, или нет.</p>
+                    <p class="production__paragraph">Помните, что срок хранения продукции зависит от температуры в
+                        камерах и соответствует сроку, заявленному на этикетке.</p>
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+            <div class="container">
+                <h4 style="margin-bottom: 20px;">Наши партнеры</h4>
+                <marquee truespeed scrolldelay="30" direction="right" class="partners__inner">
+                    <img class="partners__img" src="./img/partners/partner-1.png" alt="partner"
+                        style="margin-right: 20px;">
+                    <img class="partners__img" src="./img/partners/partner-2.png" alt="partner"
+                        style="margin-right: 20px;">
+                    <img class="partners__img" src="./img/partners/partner-3.png" alt="partner"
+                        style="margin-right: 20px;">
+                    <img class="partners__img" src="./img/partners/partner-4.png" alt="partner"
+                        style="margin-right: 20px;">
+                    <img class="partners__img" src="./img/partners/partner-5.png" alt="partner"
+                        style="margin-right: 20px;">
+                    <img class="partners__img" src="./img/partners/partner-1.png" alt="partner"
+                        style="margin-right: 20px;">
+                    <img class="partners__img" src="./img/partners/partner-2.png" alt="partner"
+                        style="margin-right: 20px;">
+                    <img class="partners__img" src="./img/partners/partner-3.png" alt="partner"
+                        style="margin-right: 20px;">
+                    <img class="partners__img" src="./img/partners/partner-4.png" alt="partner"
+                        style="margin-right: 20px;">
+                    <img class="partners__img" src="./img/partners/partner-5.png" alt="partner"
+                        style="margin-right: 20px;">
+                </marquee>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__left">
+                <p class="footer__paragraph-light">Свяжитесь с нами</p>
+                <a class="footer__tel" href="tel:+89202785606">8-920-278-56-06</a>
+                <a class="footer__email" href="mailto:89202785606@yandex.ru" target="_blank">89202785606@yandex.ru</a>
+                <p class="footer__paragraph-light">Продукты глубокой заморозки</p>
+                <p class="footer__paragraph-light" id="footer__3">456216, Челябинская область, г. Златоуст, ул. Суворова, 89А</p>
+                <p class="footer__paragraph-light">Ⓒyapelmeni.ru 1993-2023 г.</p>
+            </div>
+            <div class="footer__right">
+                <div class="footer__right-row">
+                    <p class="footer__paragraph-light" id="footer__5">Оставьте заявку, мы очень быстро и подробно отвечаем на ваши любые вопросы!  </p>
+                    <button class="footer-btn">Задать вопрос</button>
+                </div>
+                <p class="footer__paragraph-light" id="footer__6">Представленная на сайте информация не является публичной офертой, определяемой положениями 
+                    Статьи 437 (2) Гражданского кодекса РФ.</p>
+                <p class="footer__paragraph-bold">ИП: <span class="footer__paragraph-light">ФАМИЛИЯ ИМЯ ОТЧЕСТВО</span></p>
+                <p class="footer__paragraph-bold" id="footer__8">ИНН/ОГРНИП: <span class="footer__paragraph-light">77777777777/99999999999999</span></p>
+                <div class="footer__right-row">
+                    <a class="footer__paragraph-bold" href="./privacy-policy.html">Политика конфиденциальности</a>
+                    <a class="footer__paragraph-bold" href="#!" target="_blank">AdFormer.ru</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="cookie">
+        <div class="container">
+            <p class="cookie-text">Мы используем куки, чтобы пользоваться сайтом было удобно</p>
+            <button class="cookie-btn">ОТЛИЧНО</button>
+        </div>
+    </div>
+    <script async src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+.production {
+    padding: 100px 0;
+
+    .container {
+        border-radius: 16px;
+        border: 3px solid #313131;
+        background: $lightGray;
+        display: grid;
+        max-width: 1160px;
+        grid-template-columns: 2fr 1fr;
+        padding: 0;
+    }
+
+    &__left {
+        padding: 30px 40px;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 3px;
+            background-color: #313131;
+        }
+    }
+
+    &__heading {
+        @include text(#313131, 30px, 500, 135%);
+    }
+
+    &__paragraph {
+        margin-top: 30px;
+        @include text(#313131, 20px, 300, 135%);
+    }
+
+    &__right {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .production {
+        .container {
+            max-width: 950px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .production {
+        .container {
+            grid-template-columns: 1fr;
+            max-width: 748px;
+        }
+
+        &__left {
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 3px;
+                background-color: #313131;
+            }
+        }
+
+        &__heading {
+            text-align: center;
+        }
+
+
+        &__paragraph {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        &__right {
+            padding: 30px 40px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .production {
+        .container {
+            max-width: 556px;
+        }
+
+        &__heading {
+            font-size: 28px;
+        }
+
+        &__paragraph {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 556px) {
+    .production {
+        .container {
+            max-width: 300px;
+        }
+    }
+}

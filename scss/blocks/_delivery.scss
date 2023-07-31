@@ -1,0 +1,147 @@
+.delivery {
+    padding: 103px 0;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 16px;
+        border: 3px solid #313131;
+        background: $lightGray;
+        padding: 0;
+        max-width: 1160px;
+    }
+
+    &__img {
+        height: 100%;
+    }
+
+    &__content {
+        padding: 30px 40px;
+    }
+
+    &__heading {
+        @include text(#313131, 45px, 700, 135%);
+    }
+
+    &__paragpraph {
+        margin-top: 30px;
+        @include text(#313131, 18px, 300, 135%);
+
+        &-bold {
+            font-weight: 500;
+            margin-top: 30px;
+        }
+    }
+
+    &__btn {
+        margin-top: 30px;
+        @include yellow-btn(26px 62px);
+        display: block;
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .delivery {
+        .container {
+            max-width: 950px;
+        }
+
+        &__heading {
+            font-size: 40px;
+        }
+
+        &__paragpraph,
+        &__paragraph-bold {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        &__btn {
+            margin: 25px auto 0;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .delivery {
+        padding: 80px 0;
+
+        .container {
+            max-width: 748px;
+            grid-template-columns: 1fr;
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__heading {
+            text-align: center;
+        }
+
+        &__paragpraph,
+        &__paragraph-bold {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .delivery {
+        padding: 65px 0;
+
+        .container {
+            max-width: 556px;
+        }
+
+        &__content {
+            padding: 25px 20px;
+        }
+
+        &__paragpraph,
+        &__paragraph-bold {
+            margin-top: 17px;
+        }
+
+        &__btn {
+            max-width: 300px;
+            padding: 20px 0;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .delivery {
+        padding: 50px 0;
+
+        .container {
+            max-width: 300px;
+        }
+
+        &__heading {
+            font-size: 32px;
+        }
+
+        &__paragpraph,
+        &__paragraph-bold {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        &__btn {
+            font-size: 13px;
+            max-width: 260px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .delivery {
+        padding: 50px 0;
+
+        .container {
+            max-width: 300px;
+        }
+    }
+}

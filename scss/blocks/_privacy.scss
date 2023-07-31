@@ -1,0 +1,17 @@
+.main-section{
+    background-color: #0074b4;
+    padding: 100px 50px;
+}
+
+ul{
+    list-style: none;
+}
+
+h4{
+    @include text($lightGray, 30px, 500, 135%);
+    text-align: center;
+}
+
+li{
+    @include text($lightGray, 18px, 300, 24.3px);
+}
